@@ -31,7 +31,7 @@ const AuthModal = function ({ hide, setHide }) {
             <div className="window__auth">
                 <input placeholder='имя' value={name}
                     onChange={(e) => { setName(e.target.value) }} />
-                <input placeholder='пароль' value={password}
+                <input type="password" placeholder='пароль' value={password}
                     onChange={(e) => { setPassword(e.target.value) }} />
                 {error ? <span style={{ color: 'red' }}
                 >{error}</span> : null}
